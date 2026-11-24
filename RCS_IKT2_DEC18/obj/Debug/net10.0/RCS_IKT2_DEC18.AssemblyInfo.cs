@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RCS_IKT2_DEC18")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e420fab527449585780cf6d007e0753be99ae33e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+983a59c2c40414b4b323ce66d7eed0ef4b84b306")]
 [assembly: System.Reflection.AssemblyProductAttribute("RCS_IKT2_DEC18")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RCS_IKT2_DEC18")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

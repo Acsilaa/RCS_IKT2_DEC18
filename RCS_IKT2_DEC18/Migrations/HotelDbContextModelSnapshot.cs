@@ -34,7 +34,7 @@ namespace RCS_IKT2_DEC18.Migrations
                         .HasColumnType("TEXT")
                         .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
-                    b.Property<int>("GuestId")
+                    b.Property<int?>("GuestId")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("NumberOfGuests")
@@ -178,14 +178,12 @@ namespace RCS_IKT2_DEC18.Migrations
                 {
                     b.HasOne("RCS_IKT2_DEC18.Models.Guest", "Guest")
                         .WithMany("Bookings")
-                        .HasForeignKey("GuestId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("GuestId");
 
                     b.HasOne("RCS_IKT2_DEC18.Models.Room", "Room")
                         .WithMany("Bookings")
                         .HasForeignKey("RoomId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Guest");
@@ -209,7 +207,7 @@ namespace RCS_IKT2_DEC18.Migrations
                     b.HasOne("RCS_IKT2_DEC18.Models.RoomType", "RoomType")
                         .WithMany("Rooms")
                         .HasForeignKey("RoomTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("RoomType");

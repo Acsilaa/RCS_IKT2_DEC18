@@ -30,6 +30,18 @@ namespace RCS_IKT2_DEC18.Data
                 .ToTable(t => t.HasCheckConstraint(
                     "CK_Booking_Checkin_Checkout",
                     "[CheckOut] > [CheckIn]"));
+
+            modelBuilder.Entity<Models.Room>()
+                .HasMany(r => r.Bookings)
+                .WithOne(b => b.Room)
+                .HasForeignKey(b => b.RoomId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Models.RoomType>()
+                .HasMany(rt => rt.Rooms)
+                .WithOne(r => r.RoomType)
+                .HasForeignKey(r => r.RoomTypeId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

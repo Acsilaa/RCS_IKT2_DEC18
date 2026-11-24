@@ -14,7 +14,7 @@ namespace RCS_IKT2_DEC18.Models
     {
         [Key]
         public required int Id { get; set; }
-        public required int GuestId { get; set; }
+        public int? GuestId { get; set; }
         public required int RoomId { get; set; }
         public required DateTime CheckIn { get; set; }
         public required DateTime CheckOut { get; set; }
@@ -27,7 +27,7 @@ namespace RCS_IKT2_DEC18.Models
 
 
         // Navigation properties
-        public required Guest Guest { get; set; }
+        public Guest? Guest { get; set; }
         public required Room Room { get; set; }
         public required List<Review> Reviews { get; set; }
     }
