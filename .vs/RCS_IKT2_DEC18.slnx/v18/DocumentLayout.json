@@ -1,7 +1,17 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1838C3CB-2FF4-47B8-BC61-C15B9C570F72}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1838C3CB-2FF4-47B8-BC61-C15B9C570F72}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\data\\hoteldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1838C3CB-2FF4-47B8-BC61-C15B9C570F72}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +19,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 324,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\appsettings.json",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\appsettings.json",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\appsettings.json",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-24T08:06:32.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Program.cs",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\Program.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Program.cs",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T08:05:50.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HotelDbContext.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Data\\HotelDbContext.cs",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\Data\\HotelDbContext.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Data\\HotelDbContext.cs",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\Data\\HotelDbContext.cs",
+              "ViewState": "AgIAAAcAAAAgZ2ZmZkY7wBwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T07:54:26.183Z",
+              "EditorCaption": ""
             }
           ]
         }

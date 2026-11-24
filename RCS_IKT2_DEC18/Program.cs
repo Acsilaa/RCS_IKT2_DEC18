@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace RCS_IKT2_DEC18
 {
     public class Program
@@ -8,6 +10,8 @@ namespace RCS_IKT2_DEC18
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            builder.Services.AddDbContext<Data.HotelDbContext>(options =>
+                options.UseSqlite(builder.Configuration.GetConnectionString("HotelDbContext")));
 
             var app = builder.Build();
 
