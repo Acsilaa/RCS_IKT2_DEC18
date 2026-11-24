@@ -1,7 +1,23 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{12109206-4398-5628-BE02-755C3F43E9B7}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12109206-4398-5628-BE02-755C3F43E9B7}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\data\\hoteldbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12109206-4398-5628-BE02-755C3F43E9B7}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\models\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12109206-4398-5628-BE02-755C3F43E9B7}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12109206-4398-5628-BE02-755C3F43E9B7}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +25,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 324,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwCYAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-24T09:04:01.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HotelDbContext.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Data\\HotelDbContext.cs",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\Data\\HotelDbContext.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Data\\HotelDbContext.cs",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\Data\\HotelDbContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwC0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T08:53:13.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Guest.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\Guest.cs",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\Models\\Guest.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\Guest.cs",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\Models\\Guest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T08:52:04.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\Models\\Booking.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\Booking.cs",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\Models\\Booking.cs",
+              "ViewState": "AgIAAAwAAAAgzszMzGw4wBYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T08:51:21.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Review.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\Models\\Review.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\Review.cs",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\Models\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-24T08:50:31.447Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -225,3 +225,4 @@
 \\Mac\Home\Documents\iktprojekt\RCS_IKT2_DEC18\RCS_IKT2_DEC18\obj\Debug\net10.0\RCS_IKT2_DEC18.pdb
 \\Mac\Home\Documents\iktprojekt\RCS_IKT2_DEC18\RCS_IKT2_DEC18\obj\Debug\net10.0\RCS_IKT2_DEC18.genruntimeconfig.cache
 \\Mac\Home\Documents\iktprojekt\RCS_IKT2_DEC18\RCS_IKT2_DEC18\obj\Debug\net10.0\ref\RCS_IKT2_DEC18.dll
+\\Mac\Home\Documents\iktprojekt\RCS_IKT2_DEC18\RCS_IKT2_DEC18\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
