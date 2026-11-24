@@ -42,6 +42,11 @@ namespace RCS_IKT2_DEC18.Data
                 .WithOne(r => r.RoomType)
                 .HasForeignKey(r => r.RoomTypeId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Models.Booking>()
+                .HasMany(b => b.Reviews)
+                .WithOne(r => r.Booking)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

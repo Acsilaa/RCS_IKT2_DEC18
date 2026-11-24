@@ -196,7 +196,7 @@ namespace RCS_IKT2_DEC18.Migrations
                     b.HasOne("RCS_IKT2_DEC18.Models.Booking", "Booking")
                         .WithMany("Reviews")
                         .HasForeignKey("BookingId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Booking");
