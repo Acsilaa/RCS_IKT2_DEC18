@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RCS_IKT2_DEC18.Models;
 using RCS_IKT2_DEC18.Data;
+using RCS_IKT2_DEC18.DTOs;
 
 namespace RCS_IKT2_DEC18.Pages.RoomTypePages;
 
@@ -16,7 +17,7 @@ public class DeleteModel : PageModel
     }
 
     [BindProperty]
-    public RoomType RoomType { get; set; } = default!;
+    public RoomTypeDelete RoomType { get; set; } = default!;
 
     public async Task<IActionResult> OnGetAsync(int? id)
     {
@@ -32,7 +33,12 @@ public class DeleteModel : PageModel
         }
         else
         {
-            RoomType = roomtype;
+            RoomType = new RoomTypeDelete
+            {
+                Id = roomtype.Id,
+                Name = roomtype.Name,
+                RoomCount = roomtype.Rooms.Count
+            };
         }
 
         return Page();
@@ -48,8 +54,13 @@ public class DeleteModel : PageModel
         var roomtype = await _context.RoomTypes.FindAsync(id);
         if (roomtype != null)
         {
-            RoomType = roomtype;
-            _context.RoomTypes.Remove(RoomType);
+            RoomType = new RoomTypeDelete
+            {
+                Id = roomtype.Id,
+                Name = roomtype.Name,
+                RoomCount = roomtype.Rooms.Count
+            };
+            _context.RoomTypes.Where(rt => rt.Id == id).ExecuteDelete();
             await _context.SaveChangesAsync();
         }
 

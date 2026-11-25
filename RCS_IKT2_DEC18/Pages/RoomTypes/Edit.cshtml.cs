@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RCS_IKT2_DEC18.Models;
 using RCS_IKT2_DEC18.Data;
+using RCS_IKT2_DEC18.DTOs;
 
 namespace RCS_IKT2_DEC18.Pages.RoomTypePages;
 
@@ -16,7 +17,7 @@ public class EditModel : PageModel
     }
 
     [BindProperty]
-    public RoomType RoomType { get; set; } = default!;
+    public RoomTypeEdit RoomType { get; set; } = default!;
 
     public async Task<IActionResult> OnGetAsync(int? id)
     {
@@ -30,7 +31,15 @@ public class EditModel : PageModel
         {
             return NotFound();
         }
-        RoomType = roomtype;
+        RoomType = new RoomTypeEdit
+        {
+            Id = roomtype.Id,
+            Name = roomtype.Name,
+            Capacity = roomtype.Capacity,
+            PricePerNight = roomtype.PricePerNight,
+            Description = roomtype.Description
+        };
+
         return Page();
     }
 
@@ -43,11 +52,13 @@ public class EditModel : PageModel
             return Page();
         }
 
-        _context.Attach(RoomType).State = EntityState.Modified;
-
         try
         {
-            await _context.SaveChangesAsync();
+            await _context.RoomTypes.Where(rt => rt.Id == RoomType.Id).ExecuteUpdateAsync(rt => rt
+                .SetProperty(r => r.Name, RoomType.Name)
+                .SetProperty(r => r.Capacity, RoomType.Capacity)
+                .SetProperty(r => r.PricePerNight, RoomType.PricePerNight)
+                .SetProperty(r => r.Description, RoomType.Description));
         }
         catch (DbUpdateConcurrencyException)
         {

@@ -2,12 +2,12 @@
 @model RCS_IKT2_DEC18.Pages.RoomTypePages.EditModel
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Szobatípus szerkesztése";
 }
 
-<h1>Edit</h1>
+<h1>Szerkesztés</h1>
 
-<h4>RoomType</h4>
+<h4>Szobatípus</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -35,19 +35,14 @@
                 <span asp-validation-for="RoomType.Description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="RoomType.Rooms" class="control-label"></label>
-                <input asp-for="RoomType.Rooms" class="form-control" />
-                <span asp-validation-for="RoomType.Rooms" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Mentés" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Index">Vissza a listához</a>
 </div>
 
 @section Scripts {
