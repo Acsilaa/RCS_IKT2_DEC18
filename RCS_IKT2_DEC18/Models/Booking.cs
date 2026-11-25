@@ -31,6 +31,6 @@ namespace RCS_IKT2_DEC18.Models
         // Navigation properties
         public Guest? Guest { get; set; }
         public required Room Room { get; set; }
-        public required List<Review> Reviews { get; set; }
+        public required List<Review> Reviews { get; set; } = new List<Review>();
     }
 }

@@ -1,0 +1,60 @@
+@page
+@model RCS_IKT2_DEC18.Pages.RoomTypePages.IndexModel
+
+@{
+    ViewData["Title"] = "Szobatípusok";
+}
+
+<h1>Szobatípusok</h1>
+
+<p>
+    <a asp-page="Create">+ Új</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomType[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomType[0].Capacity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomType[0].PricePerNight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomType[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomType[0].RoomCount)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.RoomType) {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Capacity)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.PricePerNight)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.RoomCount)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Szerk</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Több</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Törlés</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

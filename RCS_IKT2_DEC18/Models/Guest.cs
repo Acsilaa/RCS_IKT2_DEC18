@@ -18,6 +18,6 @@ namespace RCS_IKT2_DEC18.Models
 
 
         // Navigation property
-        public required List<Booking> Bookings { get; set; }
+        public required List<Booking> Bookings { get; set; } = new List<Booking>();
     }
 }

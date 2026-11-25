@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{12109206-4398-5628-BE02-755C3F43E9B7}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12109206-4398-5628-BE02-755C3F43E9B7}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\models\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12109206-4398-5628-BE02-755C3F43E9B7}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12109206-4398-5628-BE02-755C3F43E9B7}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12109206-4398-5628-BE02-755C3F43E9B7}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\models\\roomtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12109206-4398-5628-BE02-755C3F43E9B7}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\pages\\roomtypes\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12109206-4398-5628-BE02-755C3F43E9B7}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\dtos\\roomtypecreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12109206-4398-5628-BE02-755C3F43E9B7}|RCS_IKT2_DEC18\\RCS_IKT2_DEC18.csproj|\\\\mac\\home\\documents\\iktprojekt\\rcs_ikt2_dec18\\rcs_ikt2_dec18\\pages\\roomtypes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +34,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 324,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\Models\\Booking.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\Booking.cs",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\Models\\Booking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T07:49:06.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Guest.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\Guest.cs",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\Models\\Guest.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\Guest.cs",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\Models\\Guest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T07:49:01.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Review.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\Review.cs",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\Models\\Review.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\Review.cs",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\Models\\Review.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T07:48:56.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Room.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\Models\\Room.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\Room.cs",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\Models\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T07:48:44.445Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RoomType.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\RoomType.cs",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\Models\\RoomType.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Models\\RoomType.cs",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\Models\\RoomType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T07:47:09.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RoomTypeCreate.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\DTOs\\RoomTypeCreate.cs",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\DTOs\\RoomTypeCreate.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\DTOs\\RoomTypeCreate.cs",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\DTOs\\RoomTypeCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T07:43:08.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Pages\\RoomTypes\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\Pages\\RoomTypes\\Create.cshtml.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Pages\\RoomTypes\\Create.cshtml.cs",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\Pages\\RoomTypes\\Create.cshtml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAApwCYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T07:43:00.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Pages\\RoomTypes\\Create.cshtml",
+              "RelativeDocumentMoniker": "RCS_IKT2_DEC18\\Pages\\RoomTypes\\Create.cshtml",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\iktprojekt\\RCS_IKT2_DEC18\\RCS_IKT2_DEC18\\Pages\\RoomTypes\\Create.cshtml",
+              "RelativeToolTip": "RCS_IKT2_DEC18\\Pages\\RoomTypes\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-25T07:40:44.387Z",
+              "EditorCaption": ""
             }
           ]
         }
