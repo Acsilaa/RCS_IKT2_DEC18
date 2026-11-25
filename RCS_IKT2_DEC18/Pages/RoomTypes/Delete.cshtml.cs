@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RCS_IKT2_DEC18.Models;
 using RCS_IKT2_DEC18.Data;
-using RCS_IKT2_DEC18.DTOs;
+using RCS_IKT2_DEC18.DTOs.RoomType;
 
 namespace RCS_IKT2_DEC18.Pages.RoomTypePages;
 

@@ -1,7 +1,7 @@
 ﻿using RCS_IKT2_DEC18.Models;
 using System.ComponentModel.DataAnnotations;
 
-namespace RCS_IKT2_DEC18.DTOs
+namespace RCS_IKT2_DEC18.DTOs.RoomType
 {
     public class RoomTypeDelete
     {
