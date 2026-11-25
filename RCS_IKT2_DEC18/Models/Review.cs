@@ -9,7 +9,7 @@ namespace RCS_IKT2_DEC18.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public required int Id { get; set; }
+        public int Id { get; set; }
         public required int BookingId { get; set; }
         [Range(0.0f, 5.0f)]
         public required float Rating { get; set; }

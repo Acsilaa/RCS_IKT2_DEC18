@@ -9,7 +9,7 @@ namespace RCS_IKT2_DEC18.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public required int Id { get; set; }
+        public int Id { get; set; }
         public required int Number { get; set; }
         public required int Floor { get; set; }
         public required int RoomTypeId { get; set; }
@@ -18,6 +18,6 @@ namespace RCS_IKT2_DEC18.Models
 
         // Navigation property
         public required RoomType RoomType { get; set; }
-        public required List<Booking> Bookings { get; set; } = new List<Booking>();
+        public List<Booking> Bookings { get; set; } = new List<Booking>();
     }
 }

@@ -9,7 +9,7 @@ namespace RCS_IKT2_DEC18.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public required int Id { get; set; }
+        public int Id { get; set; }
         [MaxLength(100)]
         public required string Name { get; set; }
         public required string Email { get; set; }
@@ -18,6 +18,6 @@ namespace RCS_IKT2_DEC18.Models
 
 
         // Navigation property
-        public required List<Booking> Bookings { get; set; } = new List<Booking>();
+        public List<Booking> Bookings { get; set; } = new List<Booking>();
     }
 }

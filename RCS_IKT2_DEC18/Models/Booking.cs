@@ -15,7 +15,7 @@ namespace RCS_IKT2_DEC18.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public required int Id { get; set; }
+        public int Id { get; set; }
         public int? GuestId { get; set; }
         public required int RoomId { get; set; }
         public required DateTime CheckIn { get; set; }
@@ -31,6 +31,6 @@ namespace RCS_IKT2_DEC18.Models
         // Navigation properties
         public Guest? Guest { get; set; }
         public required Room Room { get; set; }
-        public required List<Review> Reviews { get; set; } = new List<Review>();
+        public List<Review> Reviews { get; set; } = new List<Review>();
     }
 }
