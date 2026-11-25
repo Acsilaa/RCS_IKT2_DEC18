@@ -1,0 +1,96 @@
+@page
+@model RCS_IKT2_DEC18.Pages.BookingPages.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking[0].GuestId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking[0].RoomId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking[0].CheckIn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking[0].CheckOut)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking[0].NumberOfGuests)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking[0].Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking[0].TotalPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking[0].CreatedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking[0].Guest)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking[0].Room)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking[0].Reviews)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Booking) {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => item.GuestId)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.RoomId)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.CheckIn)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.CheckOut)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.NumberOfGuests)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.TotalPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.CreatedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Guest)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Room)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Reviews)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
