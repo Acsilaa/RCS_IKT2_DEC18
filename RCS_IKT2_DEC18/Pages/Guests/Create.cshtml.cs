@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RCS_IKT2_DEC18.Models;
 using RCS_IKT2_DEC18.Data;
+using RCS_IKT2_DEC18.DTOs.Guest;
 
 namespace RCS_IKT2_DEC18.Pages.GuestPages;
 
@@ -21,7 +22,7 @@ public class CreateModel : PageModel
     }
 
     [BindProperty]
-    public Guest Guest { get; set; } = default!;
+    public GuestCreate Guest { get; set; } = default!;
 
     // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD.
     public async Task<IActionResult> OnPostAsync()
@@ -31,7 +32,13 @@ public class CreateModel : PageModel
             return Page();
         }
 
-        _context.Guests.Add(Guest);
+        _context.Guests.Add(new Models.Guest
+        {
+            Name = Guest.Name,
+            Email = Guest.Email,
+            Phone = Guest.Phone,
+            RegisteredAt = DateTime.Now,
+        });
         await _context.SaveChangesAsync();
 
         return RedirectToPage("./Index");

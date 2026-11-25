@@ -2,12 +2,12 @@
 @model RCS_IKT2_DEC18.Pages.GuestPages.EditModel
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Vendég szerkesztése";
 }
 
-<h1>Edit</h1>
+<h1>Szerkesztése</h1>
 
-<h4>Guest</h4>
+<h4>Vendég</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -30,24 +30,14 @@
                 <span asp-validation-for="Guest.Phone" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Guest.RegisteredAt" class="control-label"></label>
-                <input asp-for="Guest.RegisteredAt" class="form-control" />
-                <span asp-validation-for="Guest.RegisteredAt" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Guest.Bookings" class="control-label"></label>
-                <input asp-for="Guest.Bookings" class="form-control" />
-                <span asp-validation-for="Guest.Bookings" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Mentés" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Index">Vissza a listához</a>
 </div>
 
 @section Scripts {

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RCS_IKT2_DEC18.Models;
 using RCS_IKT2_DEC18.Data;
+using RCS_IKT2_DEC18.DTOs.Guest;
 
 namespace RCS_IKT2_DEC18.Pages.GuestPages;
 
@@ -14,7 +15,7 @@ public class DetailsModel : PageModel
         _context = context;
     }
 
-    public Guest Guest { get; set; } = default!;
+    public GuestDisplay Guest { get; set; } = default!;
 
     public async Task<IActionResult> OnGetAsync(int? id)
     {
@@ -23,14 +24,22 @@ public class DetailsModel : PageModel
             return NotFound();
         }
 
-        var guest = await _context.Guests.FirstOrDefaultAsync(m => m.Id == id);
+        var guest = await _context.Guests.Include(g =>g.Bookings).FirstOrDefaultAsync(m => m.Id == id);
         if (guest is null)
         {
             return NotFound();
         }
         else
         {
-            Guest = guest;
+            Guest = new GuestDisplay
+            {
+                Name = guest.Name,
+                BookingCount = guest.Bookings.Count,
+                Email = guest.Email,
+                Phone = guest.Phone,
+                RegisteredAt = guest.RegisteredAt,
+                Id = guest.Id
+            };
         }
 
         return Page();

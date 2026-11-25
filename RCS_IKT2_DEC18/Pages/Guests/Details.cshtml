@@ -2,13 +2,13 @@
 @model RCS_IKT2_DEC18.Pages.GuestPages.DetailsModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Vendég részletek";
 }
 
-<h1>Details</h1>
+<h1>Részletek</h1>
 
 <div>
-    <h4>Guest</h4>
+    <h4>Vendég</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -36,14 +36,14 @@
             @Html.DisplayFor(model => model.Guest.RegisteredAt)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Guest.Bookings)
+            @Html.DisplayNameFor(model => model.Guest.BookingCount)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Guest.Bookings)
+            @Html.DisplayFor(model => model.Guest.BookingCount)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-page="./Edit" asp-route-id="@Model.Guest.Id">Edit</a> |
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Edit" asp-route-id="@Model.Guest.Id">Szerkesztés</a> |
+    <a asp-page="./Index">Vissza a listához</a>
 </div>
