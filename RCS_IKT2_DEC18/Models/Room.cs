@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RCS_IKT2_DEC18.Models
 {
@@ -7,6 +8,7 @@ namespace RCS_IKT2_DEC18.Models
     public class Room
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public required int Id { get; set; }
         public required int Number { get; set; }
         public required int Floor { get; set; }

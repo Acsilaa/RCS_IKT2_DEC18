@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RCS_IKT2_DEC18.Models
 {
@@ -7,6 +8,7 @@ namespace RCS_IKT2_DEC18.Models
     public class RoomType
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public required int Id { get; set; }
         [MaxLength(50)]
         public required string Name { get; set; }
@@ -18,6 +20,6 @@ namespace RCS_IKT2_DEC18.Models
 
 
         // Navigation property
-        public required List<Room> Rooms { get; set; }
+        public required List<Room> Rooms { get; set; } = new List<Room>();
     }
 }
