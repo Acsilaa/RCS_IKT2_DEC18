@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RCS_IKT2_DEC18.Models;
 using RCS_IKT2_DEC18.Data;
+using RCS_IKT2_DEC18.DTOs.Room;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace RCS_IKT2_DEC18.Pages.RoomPages;
 
@@ -16,7 +18,8 @@ public class EditModel : PageModel
     }
 
     [BindProperty]
-    public Room Room { get; set; } = default!;
+    public RoomEdit Room { get; set; } = default!;
+    public SelectList RoomTypes { get; set; } = default!;
 
     public async Task<IActionResult> OnGetAsync(int? id)
     {
@@ -30,7 +33,15 @@ public class EditModel : PageModel
         {
             return NotFound();
         }
-        Room = room;
+        RoomTypes = new SelectList(_context.RoomTypes, "Id", "Name", room.RoomTypeId);
+        Room = new RoomEdit
+        {
+            Id = room.Id,
+            Number = room.Number,
+            Floor = room.Floor,
+            RoomTypeId = room.RoomTypeId,
+            IsActive = room.IsActive
+        };
         return Page();
     }
 
@@ -43,7 +54,7 @@ public class EditModel : PageModel
             return Page();
         }
 
-        _context.Attach(Room).State = EntityState.Modified;
+        _context.Rooms.Update(new Models.Room { Floor = Room.Floor, IsActive = Room.IsActive, Number = Room.Number, RoomTypeId = Room.RoomTypeId, Id = Room.Id });
 
         try
         {

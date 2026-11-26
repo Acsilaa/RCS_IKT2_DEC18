@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using RCS_IKT2_DEC18.Models;
 using RCS_IKT2_DEC18.Data;
+using RCS_IKT2_DEC18.DTOs.Room;
 
 namespace RCS_IKT2_DEC18.Pages.RoomPages;
 
@@ -16,7 +17,7 @@ public class DeleteModel : PageModel
     }
 
     [BindProperty]
-    public Room Room { get; set; } = default!;
+    public RoomDelete Room { get; set; } = default!;
 
     public async Task<IActionResult> OnGetAsync(int? id)
     {
@@ -25,14 +26,14 @@ public class DeleteModel : PageModel
             return NotFound();
         }
 
-        var room = await _context.Rooms.FirstOrDefaultAsync(m => m.Id == id);
+        var room = await _context.Rooms.Include(r => r.RoomType).Include(r => r.Bookings).FirstOrDefaultAsync(m => m.Id == id);
         if (room is null)
         {
             return NotFound();
         }
         else
         {
-            Room = room;
+            Room = new RoomDelete { Floor=room.Floor, IsActive = room.IsActive, Number = room.Number, RoomType = room.RoomType.Name, Id = room.Id, Bookings = room.Bookings };
         }
 
         return Page();
@@ -45,11 +46,10 @@ public class DeleteModel : PageModel
             return NotFound();
         }
 
-        var room = await _context.Rooms.FindAsync(id);
-        if (room != null)
+        var room = (await  _context.Rooms.Include(r => r.RoomType).Include(r => r.Bookings).Where(r => r.Id == id).ToListAsync())[0] ?? null;
+        if (room != null && room.Bookings.Count == 0)
         {
-            Room = room;
-            _context.Rooms.Remove(Room);
+            _context.Rooms.Where(r => r.Id == id).ExecuteDelete();
             await _context.SaveChangesAsync();
         }
 

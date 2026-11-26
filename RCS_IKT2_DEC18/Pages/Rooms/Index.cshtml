@@ -2,13 +2,13 @@
 @model RCS_IKT2_DEC18.Pages.RoomPages.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Szobák";
 }
 
-<h1>Index</h1>
+<h1>Szobák</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">+ Új</a>
 </p>
 <table class="table">
     <thead>
@@ -20,16 +20,10 @@
                 @Html.DisplayNameFor(model => model.Room[0].Floor)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Room[0].RoomTypeId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Room[0].IsActive)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Room[0].RoomType)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Room[0].Bookings)
+                @Html.DisplayNameFor(model => model.Room[0].IsActive)
             </th>
             <th></th>
         </tr>
@@ -44,21 +38,15 @@
                 @Html.DisplayFor(model => item.Floor)
             </td>
             <td>
-                @Html.DisplayFor(model => item.RoomTypeId)
+                @item.RoomType
             </td>
             <td>
                 @Html.DisplayFor(model => item.IsActive)
             </td>
             <td>
-                @Html.DisplayFor(model => item.RoomType)
-            </td>
-            <td>
-                @Html.DisplayFor(model => item.Bookings)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Szerk</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Több</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Törlés</a>
             </td>
         </tr>
 }

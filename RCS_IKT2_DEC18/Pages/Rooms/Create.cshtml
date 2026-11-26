@@ -2,12 +2,12 @@
 @model RCS_IKT2_DEC18.Pages.RoomPages.CreateModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Új szoba létrehozása";
 }
 
-<h1>Create</h1>
+<h1>Létrehozás</h1>
 
-<h4>Room</h4>
+<h4>Szoba</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -25,23 +25,15 @@
             </div>
             <div class="form-group">
                 <label asp-for="Room.RoomTypeId" class="control-label"></label>
-                <input asp-for="Room.RoomTypeId" class="form-control" />
+                <select asp-for="Room.RoomTypeId" class="form-control" asp-items="Model.RoomTypes">
+                    <option value="">-- Válassz --</option>
+                </select>
                 <span asp-validation-for="Room.RoomTypeId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Room.IsActive" class="control-label"></label>
-                <input asp-for="Room.IsActive" class="form-check-input" />
+                <input asp-for="Room.IsActive" class="form-check-input" checked />
                 <span asp-validation-for="Room.IsActive" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Room.RoomType" class="control-label"></label>
-                <input asp-for="Room.RoomType" class="form-control" />
-                <span asp-validation-for="Room.RoomType" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Room.Bookings" class="control-label"></label>
-                <input asp-for="Room.Bookings" class="form-control" />
-                <span asp-validation-for="Room.Bookings" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -51,7 +43,7 @@
 </div>
 
 <div>
-    <a asp-page="./Index">Back to List</a>
+    <a asp-page="./Index">Vissza a listához</a>
 </div>
 
 @section Scripts {
