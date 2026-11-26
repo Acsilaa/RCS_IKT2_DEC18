@@ -17,7 +17,7 @@ namespace RCS_IKT2_DEC18.Models
 
 
         // Navigation property
-        public required RoomType RoomType { get; set; }
+        public RoomType RoomType { get; set; }
         public List<Booking> Bookings { get; set; } = new List<Booking>();
     }
 }
